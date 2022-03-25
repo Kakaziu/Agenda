@@ -40,6 +40,7 @@ form button{
     padding: 2% 5%;
     font-weight: lighter;
     font-size: 18px;
+    margin-bottom: 2%;
 }
 form button:hover{
     background-color: rgba(0, 0, 68, 0.856);
@@ -53,18 +54,24 @@ form button:hover{
     width: 60%;
     margin: 0 auto;
     text-align: left;
-    padding: 1%;
     font-weight: bold;
     font-size: 15px;
 }
 .messages p{
-    padding: 1%;
+    padding-top: 0%;
 }
-.error-messages{
+.error-messages-front{
     background-color: rgba(255, 0, 0, 0.267);
     color: red;
+    padding: 2% 2% 2% 2%;
+}
+.error-messages-back{
+    background-color: rgba(255, 0, 0, 0.267);
+    color: red;
+    padding: 2% 2% 0% 2%;
 }
 .success-messages{
     background-color: rgba(0, 128, 0, 0.301);
-    color: green
+    color: green;
+    padding: 2% 2% 2% 2%;
 }

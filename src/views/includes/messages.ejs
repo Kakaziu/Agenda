@@ -1,7 +1,7 @@
 <% if(errors.length > 0) {%>
-    <div class="messages error-messages">
+    <div class="messages error-messages-back">
         <% errors.forEach(erro =>{ %>
-            <p><%= erro %></p>
+            <p><%= erro %></p><br>
        <% }) %>
     </div>
 <% } %>    
@@ -9,7 +9,7 @@
 <% if(success.length > 0) {%>
     <div class="messages success-messages">
         <% success.forEach(success =>{ %>
-            <p><%= success %></p>
+            <p><%= success %><p>
        <% }) %>
     </div>
 <% } %>    
