@@ -1,0 +1,35 @@
+.table{
+    width: 80%;
+    margin: 0 auto;
+}
+table{
+    margin-top: 3%;
+    width: 100%;
+    table-layout: inherit; 
+}
+table, td{
+    padding: 2.5% 0% 1.5% 0%;
+    border-bottom: 1px solid rgb(140, 140, 255);
+    border-collapse: collapse;
+}
+table a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.exclude{
+    color: red;
+}
+.messages{
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    background-color: #ccc;
+    font-weight: bold;
+    font-size: 15px;
+}
+.table p{
+    margin-top:3% ;
+    font-size: 18px;
+}

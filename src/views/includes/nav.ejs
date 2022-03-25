@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/nav.css">
+
+<nav>
+    <div class="container">
+        <a href="/" class="title-nav">Agenda</a>
+
+        <% if(user) {%>
+        <div class="nav-cam">
+            <a href="/contato/index" class="link-nav">Cadastrar contato</a>
+            <a href="/login/logout" class="link-nav">Sair</a>
+        </div>
+        <% } else {%>
+            <a href="/login/index" class="link-nav">Entrar</a>
+        <% } %>    
+    </div>
+</nav>

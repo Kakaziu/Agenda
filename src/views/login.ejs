@@ -1,0 +1,37 @@
+<%- include('includes/head') %>
+<link rel="stylesheet" href="/css/login.css">
+<%- include('includes/nav') %>
+
+<main>
+    <div class="title">
+        <h1>Agenda</h1>
+        <p>Cadastre seus contatos abaixo:</p>
+    </div>
+
+    <%- include('includes/messages') %>
+    <div class="messages"></div>
+
+    <div class="forms">
+        <form action="/login/register" method="post" class="form-cadastro">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <h4>Cadastre-se:</h4>
+            <p>E-mail:</p>
+            <input type="email" name="email" class="email">
+            <p>Senha:</p>
+            <input type="password" name="senha" class="senha">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <form action="/login/login" method="post" class="border-none">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <h4>Faça login:</h4>
+            <p>E-mail:</p>
+            <input type="email" name="email" class="email">
+            <p>Senha:</p>
+            <input type="password" name="senha" class="senha">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</main>
+<script type="module" src="/js/login.js" defer></script>
+
+<%- include('includes/footer') %>

@@ -1,0 +1,44 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+<link rel="stylesheet" href="/css/home.css">
+
+<main>
+    <div class="title">
+        <h1>Agenda</h1>
+        <p>Abaixo estão os seus contatos:</p>
+    </div>
+
+    <% if(!user) {%>
+        <div class="messages">
+            <p>Sem usuários no sistema.</p>
+        </div>
+    <% } else {%>
+        <div class="messages">
+            <p><%= user.email %> está conectado.</p>
+        </div>
+    <% } %>    
+
+    <% if(user) {%>
+    
+    <div class="table">
+        <% if(contato.length > 0) {%>
+        <table>
+            <% contato.forEach(contato => { %>
+                <tr>
+                    <td><%= contato.nome %></td>
+                    <td><%= contato.sobrenome %></td>
+                    <td><%= contato.telefone %></td>
+                    <td><%= contato.email %></td>
+                    <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+                    <td><a href="/contato/delete/<%= contato._id %>" class="exclude">Excluir</a></td>
+                </tr>
+            <% }) %>
+        </table>   
+        <% } else { %>
+            <p>Você não tem nenhum usuário cadastrado.</p>
+        <% } %>    
+    </div>
+    <% } %>
+</main>    
+
+<%- include('includes/footer') %>

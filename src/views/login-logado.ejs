@@ -1,0 +1,14 @@
+<%- include('includes/head') %>
+<link rel="stylesheet" href="/css/login.css">
+<%- include('includes/nav') %>
+
+<main>
+    <div class="title">
+        <h1>Olá <%= user.email %></h1>
+        <p>Já pode começar a cadastrar seus contatos</p>
+    </div>
+
+    <%- include('includes/messages') %>
+</main>
+
+<%- include('includes/footer') %>

@@ -1,0 +1,15 @@
+<% if(errors.length > 0) {%>
+    <div class="messages error-messages">
+        <% errors.forEach(erro =>{ %>
+            <p><%= erro %></p>
+       <% }) %>
+    </div>
+<% } %>    
+
+<% if(success.length > 0) {%>
+    <div class="messages success-messages">
+        <% success.forEach(success =>{ %>
+            <p><%= success %></p>
+       <% }) %>
+    </div>
+<% } %>    
