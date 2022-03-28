@@ -1,9 +1,3 @@
-<style>
-    *{
-        color: white;
-    }
-</style>
-
 <h1 align="center">Agenda</h1>
 
 <p align="center">Este é um projeto de uma agenda de contatos que fiz com algumas tecnologias de back-end.</p>
@@ -20,19 +14,24 @@
 <br>
 
 <h1 align="center">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação.gif">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação2.gif">
+    <img style="width:80%" align="center" alt="readme" src="./frontend/img/Animação.gif">
 </h1>
 
 <h1 align="center">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação3.gif">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação4.gif">
+    <img style="width:80%" align="center" alt="readme" src="./frontend/img/Animação2.gif">
+</h1>
+
+<h1 align="center">
+    <img style="width:80%" align="center" alt="readme" src="./frontend/img/Animação3.gif">
+</h1>
+
+<h1 align="center">
+    <img style="width:80%" align="center" alt="readme" src="./frontend/img/Animação4.gif">
 </h1>
 
 
 <h1 align="center">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação4.gif">
-    <img style="width:49%" align="center" alt="readme" src="./frontend/img/Animação6.gif">
+    <img style="width:80%" align="center" alt="readme" src="./frontend/img/Animação6.gif">
 </h1>
 
 ### Pré-requisitos
