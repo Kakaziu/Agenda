@@ -20,7 +20,7 @@ exports.register = async (req, res) =>{
         req.session.save(() => res.redirect('/login/index'))
         return
     }catch(e){ 
-        console.log(e)
+        res.render('404')
     }
 }
 
@@ -40,7 +40,7 @@ exports.login = async (req, res) =>{
         req.session.save(() => res.redirect('/login/index'))
         return
     }catch(e){
-        console.log(e)
+        res.render('404')
     }
 }
 

@@ -1,0 +1,66 @@
+form{
+    margin-top: 2%;
+}
+.form-group{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group p{
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+.main .text{
+    margin:1% 0% 2% 0%;
+}
+.form-group input{
+    width: 100%; 
+    margin-bottom: 4%;
+    padding: 1.5%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+
+}
+form button{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 51);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-bottom: 2%;
+}
+form button:hover{
+    background-color: rgba(0, 0, 51, 0.856);
+}
+.messages{
+    border-radius: 10px;
+    max-width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: left;
+    text-align: center;
+}
+.error-messages{
+    background-color: rgba(255, 0, 0, 0.205);
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+}
+.success-messages{
+    background-color: rgba(5, 190, 5, 0.212);
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+}
+
+    

@@ -1,0 +1,50 @@
+.main table{
+    table-layout:inherit;
+    width: 90%;
+    margin: 0 auto;
+}
+tr{
+    text-align: left;
+    
+}
+td{
+    padding: 15px;
+    
+}
+table, td{
+    border-top: 1px solid rgb(141, 141, 247);
+    border-collapse: collapse;
+}
+table a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.edit{
+    color: blue;
+}
+.edit:hover{
+    border-bottom: 1px solid blue;
+}
+.exclude:hover{
+    border-bottom: 1px solid red;
+}
+.exclude{
+    color: red;
+}
+.main p{
+    margin: 1% 0px 4% 0px;
+}
+.messages{
+    border-radius: 10px;
+    max-width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.527);
+    margin-bottom: 30px;
+}
+.messages p{
+    padding: 20px;
+    font-weight: bold;
+}
