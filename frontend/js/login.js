@@ -7,41 +7,40 @@ class Login{
     submit(){
         this.form.addEventListener('submit', (e) =>{
             e.preventDefault()
-            this.divMessages.innerHTML = ''
             this.validate()
         })
     }
 
     validate(){
-        if(!this.senhaValidate() || !this.emailValidate()){
-            this.divMessages.classList.add('error-messages-front')
-            console.log(this.divMessages)
-            return
-        }else{
-            this.divMessages.classList.remove('error-messages-front')
+        if(this.emailValidate() && this.senhaValidate()){
             this.form.submit()
         }
-
     }
 
-    senhaValidate(){
-        const inputSenha = this.form.querySelector('.senha')
+    emailValidate(){
+        const inputEmail = this.form.querySelector('.email')
+        const errorEmail = this.form.querySelector('.error-email')
+        const re = /\S+@\S+\.\S+/
 
-        if(inputSenha.value.length < 3 || inputSenha.value.length > 50){
-            this.divMessages.innerHTML += 'A senha deve ter entre 3 e 50 caracteres.<br>'
-            return false
+        errorEmail.textContent = ''
+
+        if(!re.test(inputEmail.value)){
+            errorEmail.textContent = '* E-mail inválido.'
+            return
         }
 
         return true
     }
 
-    emailValidate(){
-        const inputEmail = this.form.querySelector('.email')
-        const re = /\S+@\S+\.\S+/
+    senhaValidate(){
+        const inputSenha = this.form.querySelector('.senha')
+        const errorSenha = this.form.querySelector('.error-senha')
 
-        if(!re.test(inputEmail.value)){
-            this.divMessages.innerHTML += '<br>E-mail inválido.'
-            return false
+        errorSenha.textContent = ''
+
+        if(inputSenha.value.length < 3 || inputSenha.value.length > 50){
+            errorSenha.textContent = '* Senha entre 3 e 50 caracteres.'
+            return
         }
 
         return true

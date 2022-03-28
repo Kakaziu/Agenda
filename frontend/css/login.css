@@ -19,7 +19,6 @@ form input{
     height: 22px;
     border-radius: 5px;
     border: 1px solid black;
-    margin-bottom: 10%;
     padding: 10px;
     font-size: 18px;
 }
@@ -40,7 +39,8 @@ form button{
     padding: 2% 5%;
     font-weight: lighter;
     font-size: 18px;
-    margin-bottom: 2%;
+    margin-top: 10%;
+    
 }
 form button:hover{
     background-color: rgba(0, 0, 68, 0.856);
@@ -60,11 +60,6 @@ form button:hover{
 .messages p{
     padding-top: 0%;
 }
-.error-messages-front{
-    background-color: rgba(255, 0, 0, 0.267);
-    color: red;
-    padding: 2% 2% 2% 2%;
-}
 .error-messages-back{
     background-color: rgba(255, 0, 0, 0.267);
     color: red;
@@ -74,4 +69,13 @@ form button:hover{
     background-color: rgba(0, 128, 0, 0.301);
     color: green;
     padding: 2% 2% 2% 2%;
+}
+form .error{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    color: red;
+    font-size: 16px;
 }
