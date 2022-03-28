@@ -2,34 +2,39 @@
 <link rel="stylesheet" href="/css/contato.css">
 <%- include('includes/nav') %>
 
-<main>
-    <div class="title">
-        <h1>Agenda</h1>
-        <p>Cadastre o seu contato abaixo:</p>
-    </div>
+        <main>
+            <div class="title">
+                <h1>Agenda</h1>
+                <p>Cadastre o seu contato abaixo:</p>
+            </div>
 
-    <%- include('includes/messages') %>
+            <%- include('includes/messages') %>
 
-    <div class="form-contato">
+            <div class="form-contato">
 
-            <% if(contato._id) {%>
-                <form action="/contato/edit/<%= contato._id %>" method="post">
-            <% } else { %>
-                <form action="/contato/register" method="post">
-            <% } %>    
+                    <% if(contato._id) {%>
+                        <form action="/contato/edit/<%= contato._id %>" method="post">
+                    <% } else { %>
+                        <form action="/contato/register" method="post" class="form">
+                    <% } %>    
         
-            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <p>Nome:</p>
-            <input value="<%= contato.nome %>" type="text" name="nome">
-            <p>Sobrenome:</p>
-            <input value="<%= contato.sobrenome %>" type="text" name="sobrenome">
-            <p>E-mail:</p>
-            <input value="<%= contato.email %>" type="email" name="email">
-            <p>Telefone:</p>
-            <input value="<%= contato.telefone %>" type="tel" name="telefone" class="margin-bttm">
-            <button>Salvar</button>
-        </form>
-    </div>
-</main>
-
-<%- include('includes/footer') %>
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <p>Nome:</p>
+                    <input value="<%= contato.nome %>" type="text" name="nome" class="nome">
+                    <p class="error error-nome"></p>
+                    <p>Sobrenome:</p>
+                    <input value="<%= contato.sobrenome %>" type="text" name="sobrenome" class="sobrenome">
+                    <p class="error error-sobrenome"></p>
+                    <p>E-mail:</p>
+                    <input value="<%= contato.email %>" type="email" name="email" class="email">
+                    <p class="error error-email"></p>
+                    <p>Telefone:</p>
+                    <input value="<%= contato.telefone %>" type="tel" name="telefone" class="margin-bttm telefone">
+                    <p class="error error-tel"></p>
+                    <button>Salvar</button>
+                </form>
+            </div>
+        </main>
+        <script src="/js/contato.js" defer></script>
+    </body>
+</html>

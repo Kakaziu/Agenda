@@ -1,6 +1,6 @@
 .form-contato{
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
     text-align: left;
 }
 form p{
@@ -30,25 +30,29 @@ form button:hover{
     background-color: rgba(0, 0, 68, 0.856);
     cursor: pointer;
 }
-.margin-bttm{
+.error-tel{
     margin-bottom: 5%;
 }
 .messages{
     border-radius: 5px;
-    width: 60%;
+    width: 55%;
     margin: 0 auto;
     text-align: left;
     font-weight: bold;
     font-size: 15px;
 }
-.messages p{
-    padding: 2% 2% 0% 2%;
-}
 .error-messages-back{
     background-color: rgba(255, 0, 0, 0.267);
     color: red;
+    padding: 1.5% 1.5% 0% 1.5%;
 }
 .success-messages{
     background-color: rgba(0, 128, 0, 0.301);
-    color: green
+    color: green;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+}
+form .error{
+    color: red;
+    margin-top: 10px;
+    font-size: 16px;
 }
